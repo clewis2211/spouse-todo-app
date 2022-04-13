@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container col-md-12 justify-content-center mt-3 p-3 rounded" id="navBarContent">
+        <ul class="nav " id="welcomSign">
+            <li class="nav-item">
+                <a href="" class="btn btn-secondary nave-link active" id="returnBtn">Return To Home</a>
+            </li>
+            <h1 class="welcomeTxt mx-auto" id="welcomeTxt">Welcome To Spouse</h1>
+        </ul>
+        <form class="form float-right mr-sm-2">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0 float-right" type="submit">Search</button>
+          </form>
+    </div>
+
+    <!-- <nav class="navbar navbar-light bg-light justify-content-between">
+        <a class="navbar-brand">Navbar</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav> -->
+    <div class="container page-container page-content" id="page-content">
+        <div class="p-5">
+            <div class="row container d-flex justify-content-center">
+                <div class="col-md-12">
+                    <div class="card px-3">
+                        <div class="card-body">
+                            <h3 class="card-title">Spouse ToDo</h3>
+                            <form class="add-items d-flex form-inline mb-3" id="form">
+                                <input id="inputItem"  type="text" class="form-control todo-list-input" placeholder="Insert ToDo">
+                                <input type="submit" class="add btn btn-primary font-weight-bold todo-list-add-btn" id="submitBtn">
+                            </form>
+                            <div class="list-wrapper" id="outPut">
+                                <ul class="d-flex flex-column-reverse todo-list" id="todoItems">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="scripts.js"></script>
+    <script src="/js/bootstrap.js"></script>
+</body>
+</html>

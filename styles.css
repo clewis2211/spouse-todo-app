@@ -1,0 +1,36 @@
+#navBarContent{
+    display: flex;
+    /* justify-content: space-between ; */
+    /* gap: 25em; */
+    border: solid #557a95;
+    background-color: #83677b;
+    color: white;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    text-decoration: none;
+    justify-content: space-between;
+    margin-left: 207px;
+}
+
+
+.nav a{
+    text-decoration: none;
+}
+
+.form{
+    margin-left: inherit;
+}
+
+.listGroup{
+    justify-content: space-between;
+    gap: 2000px;
+}
+
+
+
