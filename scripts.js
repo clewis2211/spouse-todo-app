@@ -1,5 +1,4 @@
-// let addBtn = document.getElementById('addBtn');
-// addBtn.addEventListener('submit', addItem);
+
 
 let form = document.getElementById('form');
 let todoItems = document.getElementById('todoItems');
@@ -29,23 +28,21 @@ function addItem(e){
     let deleteIcon = document.createTextNode('X')
     deleteBtn.appendChild(deleteIcon)
 
+    //refresh the input box once submit is clicked
     document.getElementById('inputItem').value = '';
 
     let checkBox = document.createElement('input');
     checkBox.type = 'checkbox';
-    newItem.appendChild(checkBox);
 
     li.appendChild(deleteBtn)
     todoItems.appendChild(li)
 }
 
+//Delete item (delete button)
 function removeItem(e){
     //check to see if what we are clicking has the class delete in it
     if(e.target.classList.contains('delete')){
         let li = e.target.parentElement;
         todoItems.removeChild(li)
     }
-}
-
-function clearInputBox(e){
 }
